@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                                 context.bot.username)),
                          InlineKeyboardButton(
                              text=" 🔊 Channel ",
-                             url="https://t.me/Infinity_BOTs")
+                             url="https://t.me/EZTEE_channel")
                      ],
                      [
                         InlineKeyboardButton(
@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
                             url="https://t.me/MizuXBot?start=help"),
                          InlineKeyboardButton(
                             text=" ✨ Developer",
-                             url="https://t.me/ImJanindu")        
+                             url="https://t.me/EZ_Tee")        
                        
                      ],
                      [
