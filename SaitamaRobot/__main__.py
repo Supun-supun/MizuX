@@ -216,7 +216,7 @@ def start(update: Update, context: CallbackContext):
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                          InlineKeyboardButton(
-                             text=" 🔊 Channel ",
+                             text="Channel♥ ",
                              url="https://t.me/EZTEE_channel")
                      ],
                      [
@@ -239,7 +239,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "I'm awake already!\n<b>නිදාගත්තෙ නා🥺:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
