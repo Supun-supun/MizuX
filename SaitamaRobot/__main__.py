@@ -74,25 +74,18 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
+Hi {}, my name is *{}*!
 
-I am powerful group management bot. You can find my list of available commands with /help.
+I am cute group management bot. You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-*Main* commands available[:](https://telegra.ph/file/14acfc5341f254ea3a7b4.jpg)
+Hey! My name is *MizuX*. I am a group management bot, here to help you get around and keep the order in your groups!
 
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-""".format(
-    dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
-)
+I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
+"""
 
-SAITAMA_IMG = "https://telegra.ph/file/14acfc5341f254ea3a7b4.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/5b92d8104ad4203a37699.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](ko-fi.com/sawada)"""
@@ -216,8 +209,8 @@ def start(update: Update, context: CallbackContext):
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                          InlineKeyboardButton(
-                             text="Channel♥ ",
-                             url="https://t.me/EZTEE_channel")
+                             text=" 🔊 Channel ",
+                             url="https://t.me/Infinity_BOTs")
                      ],
                      [
                         InlineKeyboardButton(
@@ -225,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                             url="https://t.me/MizuXBot?start=help"),
                          InlineKeyboardButton(
                             text=" ✨ Developer",
-                             url="https://t.me/EZ_Tee")        
+                             url="https://t.me/ImJanindu")        
                        
                      ],
                      [
@@ -239,7 +232,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>නිදාගත්තෙ නා🥺:</b> <code>{}</code>".format(
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
