@@ -92,7 +92,7 @@ HELP_STRINGS = """
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "1596805533:AAEKv6zX9-ojJKQkSmiM1Kr9zNsewysJzi8"
+SAITAMA_IMG = "https://telegra.ph/file/14acfc5341f254ea3a7b4.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](ko-fi.com/sawada)"""
